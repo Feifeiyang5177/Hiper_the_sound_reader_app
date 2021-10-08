@@ -24,7 +24,7 @@ With this Hiper app, users will be able to:
 
 ![3](https://user-images.githubusercontent.com/75951481/136613197-4f06c809-551f-4dc5-94f0-5af210f124b7.jpeg)
 
-* all pictures of shapes will be able to move when the app is finished.
+(all pictures of shapes will be able to move when the app is finished)
 - A production README.
 - An About describing the background and the functionality of Hiper app.
 - Nav links include links to this project's Github repo, live Hiper app link, as well as my own website.
