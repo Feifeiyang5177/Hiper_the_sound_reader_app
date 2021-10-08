@@ -1,0 +1,37 @@
+Background:
+Hiper is a music and sound vidualizer app that combines visuals with sounds. It can be used to interact with sound and music. The idea is coming from the fancy visual effects from EDM concerts. 
+
+
+Functionality & MVPs:
+With this Conway's Game of Life simulator, users will be able to:
+- Interact with Hiperr shapes by simply talking with them.
+- Seeing music melodies and beats through Hiper.
+
+
+Technologies, Libraries, APIs:
+This project will be implemented with the following technologies:
+The Canvas API to render the 
+Webpack to bundle and transpile the source JavaScript code
+
+
+Presentation and demostration:
+- An About modal describing the background and the functionality of Hiper
+- A production README.
+- Nav links include links to this project's Github repo, my LinkedIn, and my website.
+
+
+Implementation Timeline:
+- Friday & Weekend: Setup the tools for the project, including getting webpack and canvas running and showing up on the screen, and spend time getting comfortable with the Canvas API. Create js, HTML, and CSS files, establishing the background of the app. 
+- Monday: Creating shapes and implementing the underlying algorithms for the shapes to move. Making sure this is all rendered correctly on the canvas.
+- Tuesday: Creating more shapes that are different in look but have the same functionality. Focus on how to connect the shapes to music and sound. 
+- Wednesday: Finish the frames and focus on styling as well as testing the connection between music and the shapes. Uploading to GitHub pages. Rewrite this proposal as a production README.
+
+
+Additional resources:
+Final Proposal with vidule effects samples at google doc:
+https://docs.google.com/document/d/1Dc5dZ4chJsYsYE2fywML_Vi7Wg2iz-N9v_P4LWKDi2I/edit#
+
+ScoreCard link: https://docs.google.com/spreadsheets/d/13ei-FeEjBORRNDupyhbjH03qN6YazwfU0SI4boIvYE8/edit#gid=80636460
+
+ithub link:
+https://github.com/Feifeiyang5177/aa-solo-project
