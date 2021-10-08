@@ -3,21 +3,25 @@ Hiper is a music and sound vidualizer app that combines visuals with sounds. It 
 
 
 Functionality & MVPs:
-With this Conway's Game of Life simulator, users will be able to:
-- Interact with Hiperr shapes by simply talking with them.
-- Seeing music melodies and beats through Hiper.
+With this Hiper, users will be able to:
+- Interact with Hiperr shapes by simply talking through laptop microphone.
+- Seeing how Hiper react to the built-in music tracks. 
+- Playing music with outside devices (cellphone, speakers ets) and will be able to see how Hiper shapes response to the sounds.
+- Acutally "see" the music beats through Hiper.
 
 
 Technologies, Libraries, APIs:
 This project will be implemented with the following technologies:
-The Canvas API to render the page
-Webpack to bundle and transpile the source JavaScript code
+- The Canvas API to create and render the shapes.
+- Web Audio API for external sound input. 
+- Webpack to bundle and transpile the source JavaScript code
 
-
+![img1](/images/logo.png)
+Format: ![Alt Text](url)
 Presentation and demostration:
-- An About modal describing the background and the functionality of Hiper
+- An About describing the background and the functionality of Hiper app.
 - A production README.
-- Nav links include links to this project's Github repo, my LinkedIn, and my website.
+- Nav links include links to this project's Github repo, live Hiper app link, as well as my own website.
 
 
 Implementation Timeline:
