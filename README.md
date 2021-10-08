@@ -12,7 +12,8 @@ With this Hiper app, users will be able to:
 # Technologies, Libraries, APIs:
 - The Canvas API to create and render the shapes on the browser.
 - Web Audio API for external sound input. 
-- Webpack to bundle and transpile the source JavaScript code
+- Webpack to bundle and transpile the source JavaScript code.
+- GarageBand to edit and convert music and sound.
 
 
 # Wireframs
