@@ -34,9 +34,9 @@ With this Hiper app, users will be able to:
 # Implementation Timeline:
 - Friday & Weekend: 
   * Setup the tools for the project, including getting webpack and canvas running and showing up on the screen 
-  * pend time getting comfortable with the Canvas API. Create Javascript files, HTML files, and CSS files, establishing the background of the app. 
+  * spend time getting comfortable with the Canvas API and Audio API. Create Javascript files, HTML files, and CSS files, establishing the background of the app. 
   * Creating shapes and implementing the underlying algorithms for the shapes to move. Making sure this is all rendered correctly on the canvas.
-- Monday: Creating more shapes that are different in look but have the same functionality. Focus on how to connect the shapes to music and sound. 
+- Monday: Connecting shapes to sounds and music tracks through Audio API. Creating more shapes that are different in look but have the same functionality. Focus on how to connect the shapes to music and sound. 
 - Tuesady: Finish the frames and focus on styling as well as testing the connection between music and the shapes. 
 - Wednesday: Uploading to GitHub pages. Rewrite this proposal as a production README.
 
