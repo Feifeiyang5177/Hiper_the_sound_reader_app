@@ -16,7 +16,7 @@ This project will be implemented with the following technologies:
 - Web Audio API for external sound input. 
 - Webpack to bundle and transpile the source JavaScript code
 
-![img1](/images/logo.png)
+![](img/1.png)
 Format: ![Alt Text](url)
 Presentation and demostration:
 - An About describing the background and the functionality of Hiper app.
