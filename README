@@ -10,7 +10,7 @@ With this Conway's Game of Life simulator, users will be able to:
 
 Technologies, Libraries, APIs:
 This project will be implemented with the following technologies:
-The Canvas API to render the 
+The Canvas API to render the page
 Webpack to bundle and transpile the source JavaScript code
 
 
@@ -33,5 +33,5 @@ https://docs.google.com/document/d/1Dc5dZ4chJsYsYE2fywML_Vi7Wg2iz-N9v_P4LWKDi2I/
 
 ScoreCard link: https://docs.google.com/spreadsheets/d/13ei-FeEjBORRNDupyhbjH03qN6YazwfU0SI4boIvYE8/edit#gid=80636460
 
-ithub link:
+github link:
 https://github.com/Feifeiyang5177/aa-solo-project
