@@ -1,0 +1,39 @@
+{
+  "name": "Hiper",
+  "version": "1.0.0",
+  "description": "Hiper is a music and sound vidualizer app that combines visuals with sounds. It can be used to interact with sound and music. The idea is coming from the fancy visual effects from EDM concerts.",
+  "main": "index.js",
+
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feifeiyang5177/aa-solo-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feifeiyang5177/aa-solo-project/issues"
+  },
+  "homepage": "https://github.com/Feifeiyang5177/aa-solo-project#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.18.3",
+    "css-loader": "^6.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.2.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0"
+  }
+}
