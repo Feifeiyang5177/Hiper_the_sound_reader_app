@@ -1,7 +1,56 @@
-/* body {
-    background: black;
+body {
+    background-color: black;
+}
+#button {
+    margin-bottom: 75px;
+    height: 30px;
+    width: 100px;
+    font-family: cursive;
+    font-size: 20px;
+    font-display: auto;
+    font-weight: bold;
+    background-color: #f9f9fc;
+    color: black;
+}
+#button:hover {
+    background-color: rgb(174, 173, 175);
+}
+#cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+/* #cover p {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+} */
 
-}  */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+  }
+.head1 {
+    font-size: 50px;
+    font-family: Copperplate;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 20px;
+ }
+ .head2 {
+    font-size: 20px;
+    font-family: Copperplate;
+    line-height: 1.5;
+    color: white;
+ }
 
 * {
     margin: 0;
@@ -18,6 +67,7 @@
 }
 
 #container {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;

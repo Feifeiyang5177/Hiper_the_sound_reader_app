@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiper</title>
     <link rel="stylesheet" href="./src/style.css">
+    <style>
+        div {text-align: center;}
+    </style>
 </head>
 
 <body>
-    
+    <div id="cover">
+        <img src="./dist/wave.gif" alt="cover pic" class="center"/>
+        <h4 class="head1"><span class="head2">Welcome to the music reader</span><br>Hiper<br></h4>
+        
+        <!-- <p>Welcome to the music reader</p>
+        <p><strong>Hiper</strong></p> -->
+        <button id="button">play</button>
+    </div>
+
     <div id='container'>
         <canvas id='canvas1'></canvas>
-        <!-- <button id='button1'>Song 1</button> -->
         <audio id='audio1' controls></audio>
         <input type='file' id='fileupload' accept='audio/*' />
     </div>
