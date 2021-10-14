@@ -22,6 +22,8 @@ Current stage of Hiper app development:
 
 # Screenshots
 ![](dist/image/welcome_page)
+![](dist/image/hi_hi_hiper)
+![](dist/image/hi_hi_hiper)
 
 # Bonus
 My original songs will be connected to the app during live presentation. 
