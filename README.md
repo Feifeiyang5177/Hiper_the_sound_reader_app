@@ -3,8 +3,8 @@ Hiper is a sound visualization app that connects visual effects with sounds and 
 
 # Functionality & MVPs:
 The initial goal for Hiper app was that users will be able to:
-    - Interact with Hiper shapes by simply talking through laptop or PC’s microphones.
-    - Seeing how Hiper reacts to the pre-loaded files and enjoying music together with Hiper.
+- Interact with Hiper shapes by simply talking through laptop or PC’s microphones.
+- Seeing how Hiper reacts to the pre-loaded files and enjoying music together with Hiper.
     - When playing music and sound with other devices (cellphone, speakers ets), users will be able to see how Hiper shapes response to the outside sounds.
     - To actually “read” and "see" the differences of beats and frequencies of a sound through Hiper.
 Current stage of Hiper app development:
