@@ -153,4 +153,4 @@ function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //         ctx.strokeText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
 //     }
 
-
+ 
