@@ -15,7 +15,7 @@ Current stage of Hiper app development:
 - Hiper shapes include: 
     #1. Hi - Hi Hiper!
     #2. Linear Mercury
-    #3. Purple Sun
+    #3. Hiper Galaxy
     #4. Folding Peony
 - Users will be able to hear a sound that is connected to Hiper shape.
 - Users will be able to see the features and the changes a Hiper shape made at the same time when they click anywhere of the page. 
