@@ -153,4 +153,4 @@ file.addEventListener('change', function(){
         ctx.strokeText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
     }
 
-
+ 
