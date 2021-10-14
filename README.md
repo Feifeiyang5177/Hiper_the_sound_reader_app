@@ -21,9 +21,11 @@ Current stage of Hiper app development:
 - Users will be able to see the features and the changes a Hiper shape made at the same time when they click anywhere of the page. 
 
 # Screenshots
-![](dist/image/welcome_page)
-![](dist/image/hi_hi_hiper)
-![](dist/image/hi_hi_hiper)
+![](dist/image/welcome_page.png)
+![](dist/image/hi_hi_hiper.png)
+![](dist/image/linear_mercury.png)
+![](dist/image/purple_sun.png)
+![](dist/image/folding_peony.png)
 
 # Bonus
 My original songs will be connected to the app during live presentation. 
