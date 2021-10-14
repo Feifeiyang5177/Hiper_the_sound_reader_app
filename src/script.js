@@ -71,19 +71,19 @@ file.addEventListener('change', function(){
 })
 
 // ---------------- Hiper #1: Folding Peony -----------------
-function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-    for (let i = 0; i < bufferLength; i++){
-        barHeight = dataArray[i] * 1.5;
-        ctx.save();
-        ctx.translate(canvas.width/2, canvas.height/2);
-        ctx.rotate(i * Math.PI * 8 / bufferLength);
-        const hue = i * 0.5;
-        ctx.fillStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-        ctx.fillRect(0, 0, barWidth * 2, barHeight);
-        x += barWidth;
-        ctx.restore();
-    }
-}
+// function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+//     for (let i = 0; i < bufferLength; i++){
+//         barHeight = dataArray[i] * 1.5;
+//         ctx.save();
+//         ctx.translate(canvas.width/2, canvas.height/2);
+//         ctx.rotate(i * Math.PI * 8 / bufferLength);
+//         const hue = i * 0.5;
+//         ctx.fillStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+//         ctx.fillRect(0, 0, barWidth * 2, barHeight);
+//         x += barWidth;
+//         ctx.restore();
+//     }
+// }
 // ----------------- Hiper #2: Hiper Galaxy ---------------
 // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //         for (let i = 0; i < bufferLength; i++){
@@ -110,27 +110,27 @@ function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //         }
 //     }
 // ----------------- Hiper #3: Linear Mercury ---------------
-// function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-//     for (let i = 0; i < bufferLength; i++){
-//         barHeight = dataArray[i] * 1.5;
-//         ctx.save();
-//         ctx.translate(canvas.width/2, canvas.height/2);
-//         ctx.rotate(i * 3.2);
-//         const hue = i * 2;
-//         ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-//         ctx.beginPath();
-//         ctx.moveTo(0, 0);
-//         ctx.lineTo(0, barHeight);
-//         ctx.stroke();
-//         x += barWidth;
-//         if (i > bufferLength * 0.6){
-//             ctx.beginPath();
-//             ctx.arc(0, 0, barHeight * 7, 0, Math.PI * 0.1);
-//             ctx.stroke();
-//         }
-//         ctx.restore();
-//     }
-// }
+function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+    for (let i = 0; i < bufferLength; i++){
+        barHeight = dataArray[i] * 1.5;
+        ctx.save();
+        ctx.translate(canvas.width/2, canvas.height/2);
+        ctx.rotate(i * 3.2);
+        const hue = i * 2;
+        ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(0, barHeight);
+        ctx.stroke();
+        x += barWidth;
+        if (i > bufferLength * 0.6){
+            ctx.beginPath();
+            ctx.arc(0, 0, barHeight * 7, 0, Math.PI * 0.1);
+            ctx.stroke();
+        }
+        ctx.restore();
+    }
+}
 
 // ----------------- Hiper #4: Hi - Hi Hiper! ---------------
 //     function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
