@@ -71,19 +71,19 @@ file.addEventListener('change', function(){
 })
 
 // ---------------- Hiper #1: Folding Peony -----------------
-// function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-//     for (let i = 0; i < bufferLength; i++){
-//         barHeight = dataArray[i] * 1.5;
-//         ctx.save();
-//         ctx.translate(canvas.width/2, canvas.height/2);
-//         ctx.rotate(i * Math.PI * 8 / bufferLength);
-//         const hue = i * 0.5;
-//         ctx.fillStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-//         ctx.fillRect(0, 0, barWidth * 2, barHeight);
-//         x += barWidth;
-//         ctx.restore();
-//     }
-// }
+function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+    for (let i = 0; i < bufferLength; i++){
+        barHeight = dataArray[i] * 1.5;
+        ctx.save();
+        ctx.translate(canvas.width/2, canvas.height/2);
+        ctx.rotate(i * Math.PI * 8 / bufferLength);
+        const hue = i * 0.5;
+        ctx.fillStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+        ctx.fillRect(0, 0, barWidth * 2, barHeight);
+        x += barWidth;
+        ctx.restore();
+    }
+}
 // ----------------- Hiper #2: Hiper Galaxy ---------------
 // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //         for (let i = 0; i < bufferLength; i++){
@@ -133,24 +133,24 @@ file.addEventListener('change', function(){
 // }
 
 // ----------------- Hiper #4: Hi - Hi Hiper! ---------------
-    function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-        for (let i = 0; i < bufferLength; i++){
-            barHeight = dataArray[i] * 1;
-            ctx.save();
-            ctx.translate(canvas.width/2, canvas.height/2);
-            ctx.rotate(i);
-            const hue = 60;
-            ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-            ctx.font = dataArray[i] + 'px Optima';
-            ctx.fillText('H', 20, barHeight * 2);
-            ctx.strokeText('i', 20, barHeight * 2.5);
-            x += barWidth;
-            ctx.restore();
-        }
-        const fontSize = dataArray[1] * 3;
-        ctx.font = fontSize + 'px Helvetica';
-        ctx.fillText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
-        ctx.strokeText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
-    }
+    // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+    //     for (let i = 0; i < bufferLength; i++){
+    //         barHeight = dataArray[i] * 1;
+    //         ctx.save();
+    //         ctx.translate(canvas.width/2, canvas.height/2);
+    //         ctx.rotate(i);
+    //         const hue = 60;
+    //         ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+    //         ctx.font = dataArray[i] + 'px Optima';
+    //         ctx.fillText('H', 20, barHeight * 2);
+    //         ctx.strokeText('i', 20, barHeight * 2.5);
+    //         x += barWidth;
+    //         ctx.restore();
+    //     }
+    //     const fontSize = dataArray[1] * 3;
+    //     ctx.font = fontSize + 'px Helvetica';
+    //     ctx.fillText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
+    //     ctx.strokeText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
+    // }
 
  
