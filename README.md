@@ -7,6 +7,7 @@ The initial goal for Hiper app was that users will be able to:
 - Seeing how Hiper reacts to the pre-loaded files and enjoying music together with Hiper.
 - When playing music and sound with other devices (cellphone, speakers ets), users will be able to see how Hiper shapes response to the outside sounds.
 - To actually “read” and "see" the differences of beats and frequencies of a sound through Hiper.
+
 Current stage of Hiper app development:
 - Users will be able to see a welcome page to Hiper app.
 - Users will be able to click the “play” button and enter the Hiper app.
