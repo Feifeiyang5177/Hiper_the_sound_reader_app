@@ -1,46 +1,28 @@
-# Background:
-Hiper is a music and sound vidualizer app that combines visuals with sounds. It can be used to interact with sound and music. The idea is coming from the fancy visual effects from EDM concerts. 
+# Background
+Hiper is a sound visualization app that connects visual effects with sounds and music. It can be used for (but not limited to) immersive environments such as concerts, exhibitions, virtual music and art activities, interior design and so on. The idea was come from the visual effects in EDM concerts. 
 
+# About Hiper
+The initial goal for Hiper app was that users will be able to:
+- Interact with Hiper shapes by simply talking through laptop or PC’s microphones.
+- Seeing how Hiper reacts to the pre-loaded files and enjoying music together with Hiper.
+- When playing music and sound with other devices (cellphone, speakers ets), users will be able to see how Hiper shapes response to the outside sounds.
+- To actually “read” and "see" the differences of beats and frequencies of a sound through Hiper.
 
-# Functionality & MVPs:
-With this Hiper app, users will be able to:
-- Interact with Hiperr shapes by simply talking through laptop microphone.
-- Seeing how Hiper react to the built-in music tracks. 
-- Playing music with outside devices (cellphone, speakers ets) and users will be able to see how Hiper shapes response to the outside sounds.
-- Acutally "see" the music beats through Hiper shapes.
+Current stage of Hiper app development:
+- Users will be able to see a welcome page to Hiper app.
+- Users will be able to click the “play” button and enter the Hiper app.
+- Users will be able to see one out of four Hiper shapes by clicking anywhere on the screen.
+- Hiper shapes include: 
+    #1. Hi - Hi Hiper!
+    #2. Linear Mercury
+    #3. Purple Sun
+    #4. Folding Peony
+- Users will be able to hear a sound that is connected to Hiper shape.
+- Users will be able to see the features and the changes a Hiper shape made at the same time when they click anywhere of the page. 
 
-# Technologies, Libraries, APIs:
-- The Canvas API to create and render the shapes on the browser.
-- Web Audio API for external sound input. 
-- Webpack to bundle and transpile the source JavaScript code.
-- GarageBand to edit and convert music and sound.
-
-
-# Wireframs
-<img width="985" alt="wirefram" src="https://user-images.githubusercontent.com/75951481/136617139-f4cde2c3-0db9-42d5-bf79-1bf795e7455b.png">
-
-![1](https://user-images.githubusercontent.com/75951481/136612556-df7052e5-b34c-471a-bbc9-06e624c6515a.png)
-
-![2](https://user-images.githubusercontent.com/75951481/136613030-ee9f14b9-5f1b-4d5a-9aa9-1cecd5f5d2b9.png)
-
-![3](https://user-images.githubusercontent.com/75951481/136613197-4f06c809-551f-4dc5-94f0-5af210f124b7.jpeg)
-
-(all pictures of shapes will be able to move when the app is finished)
-- A production README.
-- An About describing the background and the functionality of Hiper app.
-- Nav links include links to this project's Github repo, live Hiper app link, as well as my own website.
-
-
-# Implementation Timeline:
-- Friday & Weekend: 
-  * Setup the tools for the project, including getting webpack and canvas running and showing up on the screen 
-  * spend time getting comfortable with the Canvas API and Audio API. Create Javascript files, HTML files, and CSS files, establishing the background of the app. 
-  * Creating shapes and implementing the underlying algorithms for the shapes to move. Making sure this is all rendered correctly on the canvas.
-- Monday: Connecting shapes to sounds and music tracks through Audio API. Creating more shapes that are different in look but have the same functionality. Focus on how to connect the shapes to music and sound. 
-- Tuesady: Finish the frames and focus on styling as well as testing the connection between music and the shapes. 
-- Wednesday: Uploading to GitHub pages. Rewrite this proposal as a production README.
-
-# Bonus:
-If I still have time, my own songs will be connected to the app and being played while demostrate the app. 
+# Screenshots
+![welcome_page](<img width="1919" alt="welcome_page" src="https://user-images.githubusercontent.com/75951481/137350865-a39f26fa-570b-40ad-861b-f4660079b6b6.png">)
+# Bonus
+My original songs will be connected to the app during live presentation. 
 
 
