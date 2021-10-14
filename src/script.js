@@ -70,6 +70,7 @@ file.addEventListener('change', function(){
     animate();
 })
 
+// ---------------- Hiper #1: Folding Peony -----------------
 // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //     for (let i = 0; i < bufferLength; i++){
 //         barHeight = dataArray[i] * 1.5;
@@ -83,7 +84,7 @@ file.addEventListener('change', function(){
 //         ctx.restore();
 //     }
 // }
-
+// ----------------- Hiper #2: Purple Sun ---------------
 // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //         for (let i = 0; i < bufferLength; i++){
 //             barHeight = dataArray[i] * 1.5;
@@ -108,7 +109,7 @@ file.addEventListener('change', function(){
 //             ctx.restore();
 //         }
 //     }
-
+// ----------------- Hiper #3: Linear Mercury ---------------
 // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
 //     for (let i = 0; i < bufferLength; i++){
 //         barHeight = dataArray[i] * 1.5;
@@ -131,6 +132,7 @@ file.addEventListener('change', function(){
 //     }
 // }
 
+// ----------------- Hiper #4: Hi - Hi Hiper! ---------------
     function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
         for (let i = 0; i < bufferLength; i++){
             barHeight = dataArray[i] * 1;
@@ -152,4 +154,3 @@ file.addEventListener('change', function(){
     }
 
 
-    
