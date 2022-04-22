@@ -3,6 +3,7 @@ const container = document.getElementById('container');
 const canvas = document.getElementById('canvas1');
 const file = document.getElementById('fileupload');
 const button = document.getElementById('button');
+const button2 = document.getElementById('clickMe');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');

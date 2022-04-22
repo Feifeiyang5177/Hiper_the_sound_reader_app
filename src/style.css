@@ -24,6 +24,12 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.button2 {
+    color:rgb(146, 30, 10)
+}
+
+
+
 .center {
     display: block;
     margin-left: auto;
