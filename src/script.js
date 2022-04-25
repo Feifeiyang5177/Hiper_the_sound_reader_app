@@ -42,6 +42,7 @@ container.addEventListener('click', function(){
     animate();
 });
 
+
 file.addEventListener('change', function(){
     const files = this.files;
     const audio1 = document.getElementById('audio1');

@@ -24,10 +24,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.button2 {
-    color:rgb(146, 30, 10)
-}
-
 
 
 .center {
@@ -69,6 +65,28 @@ body {
     height: 100%;
 }
 
+.button2{
+    
+    width: 100px;
+    height: 60px;
+    font-family: cursive;
+    font-size: 20px;
+    /* font-weight: bold; */
+    background-color: rgb(245, 217, 240);
+    color: black;
+     cursor: pointer;
+    /* outline-offset: 4px; */
+    /* border-radius: 3px; */
+    /* filter: drop-shadow(5px 7px 4px rgb(110, 110, 110)); */
+    /* border: 0.5px solid black; */
+    /* text-shadow: 0 1px 0 #000; */
+     
+}
+
+.button2:hover {
+    background-color: rgb(174, 173, 175);
+}
+
 #canvas1 {
     position: absolute;
     top: 0;
@@ -78,10 +96,12 @@ body {
 }
 
 #audio1 {
+    position: relative;
     margin: 30%;
-    margin-top: 830px;
-    margin-left: 1600px;
+    margin-top: 85vh;
+    margin-left: 10px;
     display: block;
+    width: 20vw;
 }
 
 #fileupload {
@@ -89,7 +109,7 @@ body {
     top: 8px;
     left: 10px;
     color: white;
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 
