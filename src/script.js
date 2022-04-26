@@ -1,4 +1,4 @@
-
+// const  sample = require("./sample.wav")
 const container = document.getElementById('container');
 const canvas = document.getElementById('canvas1');
 const file = document.getElementById('fileupload');
@@ -40,7 +40,42 @@ container.addEventListener('click', function(){
         requestAnimationFrame(animate);
     }
     animate();
+    audioSource = null;
 });
+
+// container.addEventListener("click", function () {
+//   const audio1 = document.getElementById("audio1");
+//   audio1.src = sample;
+//   const audioContext = new AudioContext();
+//   audio1.play();
+//   audioSource = audioContext.createMediaElementSource(audio1);
+//   analyser = audioContext.createAnalyser();
+//   audioSource.connect(analyser);
+//   analyser.connect(audioContext.destination);
+//   analyser.fftsize = 32;
+//   const bufferLength = analyser.frequencyBinCount;
+//   const dataArray = new Uint8Array(bufferLength);
+//   const barWidth = 10;
+//   let barHeight;
+//   let x;
+
+//   function animate() {
+//     x = 0;
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+//     analyser.getByteFrequencyData(dataArray);
+//     drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray);
+//     requestAnimationFrame(animate);
+//   }
+//   animate();
+// });
+
+
+
+
+
+
+
+
 
 
 file.addEventListener('change', function(){
@@ -72,8 +107,35 @@ file.addEventListener('change', function(){
     animate();
 })
 
+function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray) {
+    // let visualNum = Math.floor(Math.random() * 4);
+    // debugger
+    let visualNum = 2;
+    switch (visualNum) {
+      case 1:
+        foldingPeony(bufferLength, x, barWidth, barHeight, dataArray);
+        break;
+      case 2:
+        hiperGalaxy(bufferLength, x, barWidth, barHeight, dataArray);
+        break;
+      case 3:
+        linearMercury(bufferLength, x, barWidth, barHeight, dataArray);
+        break;
+      case 4:
+        hiHiper(bufferLength, x, barWidth, barHeight, dataArray);
+        break;
+
+    default: 
+    return null;
+
+    }
+
+}
+
+
+
 // ---------------- Hiper #1: Folding Peony -----------------
-function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+function foldingPeony(bufferLength, x, barWidth, barHeight, dataArray){
     for (let i = 0; i < bufferLength; i++){
         barHeight = dataArray[i] * 1.5;
         ctx.save();
@@ -87,72 +149,72 @@ function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
     }
 }
 // ----------------- Hiper #2: Hiper Galaxy ---------------
-// function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-//         for (let i = 0; i < bufferLength; i++){
-//             barHeight = dataArray[i] * 1.5;
-//             ctx.save();
-//             ctx.translate(canvas.width/2, canvas.height/2);
-//             ctx.rotate(i * 2.2);
-//             const hue =  285 + i * barHeight/15;
-//             ctx.strokeStyle = 'hsl(' + hue + ',100%, 50)';
-//             ctx.fillStyle = 'hsl(' + hue + ',100%, 50%)';
-//             ctx.beginPath();
-//             ctx.arc(barHeight + 75, barHeight + 75, 50, 0, Math.PI * 2);
-//             ctx.moveTo(barHeight + 110, barHeight + 75);
-//             ctx.arc(barHeight + 75, barHeight + 75, 35, 0, Math.PI * 2);
-//             ctx.stroke();
+function hiperGalaxy(bufferLength, x, barWidth, barHeight, dataArray){
+        for (let i = 0; i < bufferLength; i++){
+            barHeight = dataArray[i] * 1.5;
+            ctx.save();
+            ctx.translate(canvas.width/2, canvas.height/2);
+            ctx.rotate(i * 2.2);
+            const hue =  285 + i * barHeight/15;
+            ctx.strokeStyle = 'hsl(' + hue + ',100%, 50)';
+            ctx.fillStyle = 'hsl(' + hue + ',100%, 50%)';
+            ctx.beginPath();
+            ctx.arc(barHeight + 75, barHeight + 75, 50, 0, Math.PI * 2);
+            ctx.moveTo(barHeight + 110, barHeight + 75);
+            ctx.arc(barHeight + 75, barHeight + 75, 35, 0, Math.PI * 2);
+            ctx.stroke();
 
-//             ctx.beginPath();
-//             ctx.moveTo(barHeight + 65, barHeight + 65);
-//             ctx.arc(barHeight + 60, barHeight + 60, 5, 0, Math.PI * 2);
-//             ctx.moveTo(barHeight + 95, barHeight + 65);
-//             ctx.arc(barHeight + 90, barHeight + 65, 5, 0, Math.PI * 2);
-//             ctx.fill();
-//             ctx.restore();
-//         }
-//     }
+            ctx.beginPath();
+            ctx.moveTo(barHeight + 65, barHeight + 65);
+            ctx.arc(barHeight + 60, barHeight + 60, 5, 0, Math.PI * 2);
+            ctx.moveTo(barHeight + 95, barHeight + 65);
+            ctx.arc(barHeight + 90, barHeight + 65, 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.restore();
+        }
+    }
 // ----------------- Hiper #3: Linear Mercury ---------------
-// function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-//     for (let i = 0; i < bufferLength; i++){
-//         barHeight = dataArray[i] * 1.5;
-//         ctx.save();
-//         ctx.translate(canvas.width/2, canvas.height/2);
-//         ctx.rotate(i * 3.2);
-//         const hue = i * 2;
-//         ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-//         ctx.beginPath();
-//         ctx.moveTo(0, 0);
-//         ctx.lineTo(0, barHeight);
-//         ctx.stroke();
-//         x += barWidth;
-//         if (i > bufferLength * 0.6){
-//             ctx.beginPath();
-//             ctx.arc(0, 0, barHeight * 7, 0, Math.PI * 0.1);
-//             ctx.stroke();
-//         }
-//         ctx.restore();
-//     }
-// }
+function linearMercury(bufferLength, x, barWidth, barHeight, dataArray){
+    for (let i = 0; i < bufferLength; i++){
+        barHeight = dataArray[i] * 1.5;
+        ctx.save();
+        ctx.translate(canvas.width/2, canvas.height/2);
+        ctx.rotate(i * 3.2);
+        const hue = i * 2;
+        ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(0, barHeight);
+        ctx.stroke();
+        x += barWidth;
+        if (i > bufferLength * 0.6){
+            ctx.beginPath();
+            ctx.arc(0, 0, barHeight * 7, 0, Math.PI * 0.1);
+            ctx.stroke();
+        }
+        ctx.restore();
+    }
+}
 
 // ----------------- Hiper #4: Hi - Hi Hiper! ---------------
-    // function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
-    //     for (let i = 0; i < bufferLength; i++){
-    //         barHeight = dataArray[i] * 1;
-    //         ctx.save();
-    //         ctx.translate(canvas.width/2, canvas.height/2);
-    //         ctx.rotate(i);
-    //         const hue = 60;
-    //         ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
-    //         ctx.font = dataArray[i] + 'px Optima';
-    //         ctx.fillText('H', 20, barHeight * 2);
-    //         ctx.strokeText('i', 20, barHeight * 2.5);
-    //         x += barWidth;
-    //         ctx.restore();
-    //     }
-    //     const fontSize = dataArray[1] * 3;
-    //     ctx.font = fontSize + 'px Helvetica';
-    //     ctx.fillText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
-    //     ctx.strokeText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
-    // }
+    function hiHiper(bufferLength, x, barWidth, barHeight, dataArray){
+        for (let i = 0; i < bufferLength; i++){
+            barHeight = dataArray[i] * 1;
+            ctx.save();
+            ctx.translate(canvas.width/2, canvas.height/2);
+            ctx.rotate(i);
+            const hue = 60;
+            ctx.strokeStyle = 'hsl(' + hue + ',100%,' + barHeight/3 + '%)';
+            ctx.font = dataArray[i] + 'px Optima';
+            ctx.fillText('H', 20, barHeight * 2);
+            ctx.strokeText('i', 20, barHeight * 2.5);
+            x += barWidth;
+            ctx.restore();
+        }
+        const fontSize = dataArray[1] * 3;
+        ctx.font = fontSize + 'px Helvetica';
+        ctx.fillText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
+        ctx.strokeText('H', canvas.width/2 - fontSize/3, canvas.height/2 + fontSize/3);
+    }
 
  
