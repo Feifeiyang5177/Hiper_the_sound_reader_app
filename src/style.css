@@ -104,8 +104,8 @@ body {
 #audio1 {
     position: absolute;
     /* margin: 30%; */
-    margin-top: 10vh;
-    margin-left: 5px;
+    margin-top: 1vh;
+    margin-left: 1px;
     display: block;
     width: 28vw;
     height: 4vh;
