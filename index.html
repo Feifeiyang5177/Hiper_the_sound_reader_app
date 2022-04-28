@@ -13,20 +13,34 @@
 </head>
 
 <body>
+    
     <div id="cover">
         <img src="./dist/wave.gif" alt="cover pic" class="center"/>
         <h4 class="head1"><span class="head2">Welcome to the sound reader</span><br>Hiper<br></h4>
         <button id="button">play</button>
     </div>
 
+    <div id="together">
     <div id='container'>
         <canvas id='canvas1'></canvas>
-        <button class="button2">Click Me!</button>
-        <audio id='audio1' controls></audio>
-        
-        <input type='file' id='fileupload' accept='audio/*' />
+        <div id="click">
+            <lable class="click-lable" >
+                <span style="color:rgb(248, 12, 248)" ><b>Click Anywhere!</b></span>
+                <span style="color:rgb(94, 168, 8)">Or select your own song:</span>
+            </label>
+            <!-- <audio id='audio1' controls></audio> -->
+            <br>
+            <input type='file' id='fileupload' accept='audio/*' />
+        </div>
+  
+            <!-- <input type='file' id='fileupload' accept='audio/*' /> -->
+   
+        <audio src="music/FirstLove.mp3" id='audio1' controls></audio>
+   <div>
         
    
+    </div>
+
     </div>
     <!-- <script src="./src/microphone.js"></script> -->
     <script src="./src/script.js"></script>
